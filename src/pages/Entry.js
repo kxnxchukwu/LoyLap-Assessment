@@ -26,7 +26,7 @@ function Entry({ companies = [], onSelectCompany = () => {} }) {
             label="Company"
             onChange={handleChange}
           >
-            {companies.map((company) => (<MenuItem value={company}>{company.name}</MenuItem>))}
+            {companies.map((company) => (<MenuItem key={company.id} value={company}>{company.name}</MenuItem>))}
           </Select>
         </FormControl>
       </Box>
