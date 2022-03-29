@@ -1,6 +1,6 @@
-<img align="right" src="readme_assets/loylap_logo.png" alt="LoyLap Logo">
 
-# Welcome to LoyLap's frontend assessment!
+
+# Welcome to LoyLap's frontend assessment! <img align="right" src="readme_assets/loylap_logo.png" alt="LoyLap Logo">
 
 In this project you are required to build the following simple UI components:
 
@@ -31,7 +31,7 @@ The placeholders are svg files that you will replace with the components you are
 
 ## Data structure
 
-These are the type definitions for each elements in the arrays that those endpoints are returning:
+These are the type definitions for each element in the arrays that those endpoints are returning:
 
 ```
 type PlanName = 'Free' | 'Starter' | 'Grow'
