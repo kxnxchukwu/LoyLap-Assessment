@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import Box from '@mui/material/Box'
+import Plan from '../components/plan/plan.component'
+import PaymentMethod from '../components/payment-method/payment-method.component'
 
 function Billing({ plans = [], cards = [], company = null }) {
   const navigate = useNavigate()
@@ -8,7 +10,6 @@ function Billing({ plans = [], cards = [], company = null }) {
   if (!company) {
     navigate('/')
   }
-
   return (
     <React.Fragment>
       <Link to="/">Go back to select</Link>
@@ -16,10 +17,11 @@ function Billing({ plans = [], cards = [], company = null }) {
         <h3>Current Plan</h3>
         {/*TODO: delete this and replace with your UI component*/} 
         <img src="assets/placeholders/plan_placeholder.svg" alt="Payment plan component placeholder" />
-
+        <Plan />
         <h3>Payment Method</h3>
         {/*TODO: delete this and replace with your UI component*/} 
         <img src="assets/placeholders/card_placeholder.svg" alt="Card component placeholder" />
+        <PaymentMethod></PaymentMethod>
       </Box>
     </React.Fragment>
   )
