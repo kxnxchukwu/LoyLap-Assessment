@@ -7,6 +7,7 @@ const Container = styled.div`
     padding: 10px 15px;
     border: 2px solid grey;
     margin-bottom: 25px;
+    border-radius: 20px;
 `;
 
 export default Container;

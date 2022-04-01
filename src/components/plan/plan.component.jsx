@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, OptionsContainer, TextContainer, ButtonContainer, Button}  from "../../styles";
 
-const Plan = (plan) => {
+const Plan = ({name, description, value}) => {
     return (
         <Container>
             <OptionsContainer>
-                <TextContainer>Lorem Ipsum</TextContainer>
-                <TextContainer> € 15.00 / month </TextContainer>
+                <TextContainer>{name}</TextContainer>
+                <TextContainer> € {value} / month </TextContainer>
             </OptionsContainer>
             <OptionsContainer>
-                <TextContainer>Ut elementum consequat diam</TextContainer>
+                <TextContainer>{description}</TextContainer>
             </OptionsContainer>
             <ButtonContainer>
                 <Button>Change Plan</Button>

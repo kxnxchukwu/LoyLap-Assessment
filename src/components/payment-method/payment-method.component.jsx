@@ -1,19 +1,26 @@
 import React from "react";
+import { ReactComponent as VisaLogo} from "../../assets/cardtypes/visa.svg";
+import { ReactComponent as MastercardLogo} from "../../assets/cardtypes/mastercard.svg";
 
-import { Container, OptionsContainer, TextContainer, ButtonContainer, InvertedButton}  from "../../styles";
+import { Container, LogoContainer, OptionsContainer, TextContainer, ButtonContainer, InvertedButton}  from "../../styles";
 
-const PaymentMethod = (card) => {
+const PaymentMethod = ({type, expiry, lastFour}) => {
     return (
         <Container>
-            <OptionsContainer>
-                <TextContainer>{"<logo> Credit Card"}</TextContainer>
+            <OptionsContainer logo>
+            <LogoContainer>
+            {type === 'visa' ? <VisaLogo/> : <MastercardLogo/>}
+            </LogoContainer>
+            <TextContainer>
+            Credit Card
+            </TextContainer>
             </OptionsContainer>
             <ButtonContainer>
                 <InvertedButton>Change</InvertedButton>
             </ButtonContainer>
             <OptionsContainer creditCard>
-                <TextContainer>**** **** **** 5462</TextContainer>
-                <TextContainer>Expiry Date 12/25</TextContainer>
+                <TextContainer>**** **** **** {lastFour}</TextContainer>
+                <TextContainer>Expiry Date {expiry}</TextContainer>
             </OptionsContainer>
 
         </Container>
