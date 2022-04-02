@@ -1,0 +1,20 @@
+[
+  {
+    "companyId": 111,
+    "type": "visa",
+    "expiry": "08/24",
+    "lastFour": "5454"
+  },
+  {
+    "companyId": 255,
+    "type": "mastercard",
+    "expiry": "01/25",
+    "lastFour": "7364"
+  },
+  {
+    "companyId": 7366,
+    "type": "visa",
+    "expiry": "12/22",
+    "lastFour": "8511"
+  }
+]

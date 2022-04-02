@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Free",
+    "description": "Stamp Loyalty Only",
+    "value": 0
+  },
+  {
+    "name": "Starter",
+    "description": "Advanced Loyalty with POS Integration",
+    "value": 1500
+  },
+  {
+    "name": "Grow",
+    "description": "Mobile Wallet, Loyalty and Preordering",
+    "value": 3000
+  }
+]
