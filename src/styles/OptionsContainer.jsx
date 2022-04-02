@@ -11,7 +11,8 @@ const OptionsContainer = styled.div`
     {
         flex-wrap: wrap;
         justify-content: flex-start;
-        column-gap: 50px;
+        margin-left: 88px;
+        column-gap: 35px;
     }
     `}
     ${(props) =>
@@ -23,6 +24,18 @@ const OptionsContainer = styled.div`
         column-gap: 10px;
     }
     `}
+    @media screen and (max-width: 800px) {
+        ${(props) =>
+        props.creditCard &&
+        css`
+        {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-left: 5px;
+            column-gap: 10px;
+        }
+    `}
+    }  
 `;
 
 export default OptionsContainer;

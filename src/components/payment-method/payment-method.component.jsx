@@ -1,7 +1,6 @@
 import React from "react";
 import { ReactComponent as VisaLogo} from "../../assets/cardtypes/visa.svg";
 import { ReactComponent as MastercardLogo} from "../../assets/cardtypes/mastercard.svg";
-
 import { Container, LogoContainer, OptionsContainer, TextContainer, ButtonContainer, InvertedButton}  from "../../styles";
 
 const PaymentMethod = ({type, expiry, lastFour}) => {
@@ -11,7 +10,7 @@ const PaymentMethod = ({type, expiry, lastFour}) => {
             <LogoContainer>
             {type === 'visa' ? <VisaLogo/> : <MastercardLogo/>}
             </LogoContainer>
-            <TextContainer>
+            <TextContainer bold>
             Credit Card
             </TextContainer>
             </OptionsContainer>
@@ -19,10 +18,9 @@ const PaymentMethod = ({type, expiry, lastFour}) => {
                 <InvertedButton>Change</InvertedButton>
             </ButtonContainer>
             <OptionsContainer creditCard>
-                <TextContainer>**** **** **** {lastFour}</TextContainer>
-                <TextContainer>Expiry Date {expiry}</TextContainer>
+                <TextContainer bold >**** **** **** {lastFour}</TextContainer>
+                <TextContainer expiry>Expiry Date {expiry}</TextContainer>
             </OptionsContainer>
-
         </Container>
     )
 }

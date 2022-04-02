@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const LogoContainer = styled.div`
-      width: 75px;
+      width: 70px;
 `;
 
 export default LogoContainer;

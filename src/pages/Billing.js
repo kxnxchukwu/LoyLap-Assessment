@@ -16,15 +16,10 @@ function Billing({ plans = [], cards = [], company = null }) {
       <Link to="/">Go back to select</Link>
       <Box>
         <h3>Current Plan</h3>
-        {/*TODO: delete this and replace with your UI component*/} 
-        
-        {/* <img src="assets/placeholders/plan_placeholder.svg" alt="Plan component placeholder" /> */}
         {plans.map((plan) => plan.name === company.plan ? <Plan key={company.id} name={plan.name} description={plan.description} value={plan.value} /> : "")}
 
         <h3>Payment Method</h3>
-        {/*TODO: delete this and replace with your UI component*/} 
-        {/* <img src="assets/placeholders/card_placeholder.svg" alt="Card component placeholder" /> */}
-        {cards.map((card) => card.companyId === company.id ? <PaymentMethod type={card.type} expiry={card.expiry} lastFour={card.lastFour}/> : "")}
+        {cards.map((card) => card.companyId === company.id ? <PaymentMethod key={card.companyId} type={card.type} expiry={card.expiry} lastFour={card.lastFour}/> : "")}
         
       </Box>
     </React.Fragment>

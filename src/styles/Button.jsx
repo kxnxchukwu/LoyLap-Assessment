@@ -15,7 +15,7 @@ border: none;
 cursor: pointer;
 display: flex;
 justify-content: center;
-border-radius: 15px;
+border-radius: 10px;
 &:hover {
   background-color: white;
   color: black;
