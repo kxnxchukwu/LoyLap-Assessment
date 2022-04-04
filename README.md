@@ -5,7 +5,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/11f27cfd-c6ea-4c6a-b1dc-41873437223b/deploy-status)](https://app.netlify.com/sites/deft-croissant-dafcda/deploys)
 
 ## LoyLap's Frontend Assessment
-Candidate Test for LoyLap. The task was to build the two simple UI components:
+Candidate Test for LoyLap. The task was to build two simple UI components:
 
 ![alt text](readme_assets/tobuild.png "To Build")  
 
